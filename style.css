@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tagesschrift", system-ui;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(to bottom right, aquamarine, hotpink);
+  color: white;
+}
+
+h1 {
+  font-size: 8em;
+}
+
+.spotlight {
+  position: fixed;
+  inset: 0;
+  opacity: 0.95;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle at var(--clientX, 50%) var(--clientY, 50%),
+    transparent 6em,
+    black 8em
+  );
+}
